@@ -30,7 +30,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
               {/* Google Play Store */}
               <a
-                href="https://play.google.com/store/apps/details?id=br.com.cervantestecnologia.catalogoonline"
+                href="https://play.google.com/store/apps/details?id=com.artsystem.app&hl=pt_BR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
@@ -46,7 +46,7 @@ export default function Home() {
 
               {/* Apple App Store */}
               <a
-                href="https://apps.apple.com/br/app/cat%C3%A1logo-online/id1608059013"
+                href="https://apps.apple.com/br/app/artsystem/id6749015669"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
