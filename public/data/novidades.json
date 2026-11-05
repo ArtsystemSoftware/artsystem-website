@@ -1,0 +1,35 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "slug": "controle-consulta-pdv",
+            "thumbnail": "thumb-p1.png",
+            "gallery": [
+                "p1-1.png",
+                "p1-2.png",
+                "p1-3.png",
+                "p1-4.png",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "title": "Novas Opções de Controle de Consulta de Produtos no PDV da ArtSystem",
+            "text": "Estamos empolgados em anunciar uma atualização significativa no nosso sistema PDV, especificamente no módulo As_Retag.exe, que agora oferece maior controle e segurança na consulta de produtos.\n\n**Consulta Livre com a Opção \"Sim\"**  \nCom a opção \"Sim\" ativada, todos os operadores têm acesso irrestrito à consulta de produtos. Essa funcionalidade agiliza o atendimento, permitindo que sua equipe consulte informações rapidamente, sem barreiras.\n\n**Restrição Total com a Opção \"Não\"**  \nAo selecionar a opção \"Não\", a função de consulta de produtos é desativada para todos os operadores. O recurso permanece visível na interface, mas inativo, garantindo maior controle em ambientes onde a consulta não é necessária.\n\n**Segurança Reforçada com a Opção \"Por Operador\"**  \nA opção \"Por Operador\"introduz um nível adicional de segurança, exigindo autenticação de um supervisor para acessar a consulta de produtos. Essa funcionalidade é ideal para operações que demandam controle rigoroso de acesso.\n\nEssas novas opções permitem que você personalize o comportamento do sistema PDV de acordo com as necessidades do seu negócio, garantindo flexibilidade, segurança e eficiência no atendimento ao cliente.",
+            "date": "Julho 2025",
+            "sistema": "PDV"
+        },
+        {
+            "id": 2,
+            "slug": "portaria-sre-64-2025-icms-openret",
+            "thumbnail": "thumb-p2.png",
+            "gallery": [],
+            "title": "ATENÇÃO EMPRESÁRIOS – ICMS: Nova legislação já em vigor",
+            "text": "🚨 ATENÇÃO EMPRESÁRIOS – ICMS 🚨\nNova legislação já em vigor: Portaria SRE 64/2025\n\nA Portaria SRE nº 64/2025 alterou a tributação de diversos produtos, retirando-os do regime de Substituição Tributária (ICMS-ST).\n\n⚠️ Empresas que NÃO se adequarem à nova legislação podem sofrer:\n\nMultas elevadas por erro de tributação\nAutuações fiscais\nProblemas em fiscalizações do ICMS\nInconsistências em notas fiscais e apuração de impostos\n\n👉 A não conformidade torna o estabelecimento alvo direto da fiscalização estadual.\n\n✅ A OpenRet resolve isso para você\n\nA OpenRet realizará todo o trabalho de adequação fiscal, incluindo:\n\n✔️ Revisão dos produtos afetados pela SRE 64/2025\n✔️ Alteração das tributações incorretas para as tributações corretas\n✔️ Adequação do sistema para evitar erros fiscais\n✔️ Mais segurança e tranquilidade para sua empresa\n\n💰 Valor do serviço\n\n🔹 R$ 449,98\n(valor único para a adequação conforme a SRE 64/2025)\n\n⏰ URGENTE!\n\nEssa adequação deve ser feita o quanto antes, evitando:\n\nMultas inesperadas\nProblemas com o fisco\nPrejuízos financeiros\n\nNão espere uma fiscalização para agir.\nRegularize agora e fique em conformidade com a lei.\n\n📞 Entre em contato agora mesmo\n\n📱 Telefone / WhatsApp: +55 (11) 91740-1730\n📧 E-mail: mona@assoftware.com.br\n\nOpenRet – Cuidando da sua empresa para que você não tenha surpresas com o ICMS.",
+            "date": "Janeiro 2026",
+            "sistema": "ArtSystem"
+        }
+    ]
+}

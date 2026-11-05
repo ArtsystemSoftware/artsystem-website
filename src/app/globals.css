@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+    overflow-x: hidden;
+  }
+
+  .triangle-transition {
+    @apply relative z-0 hidden md:block;
+  }
+
+  .triangle-transition::before,
+  .triangle-transition::after {
+    content: "";
+    @apply absolute w-0 h-0 border-solid;
+  }
+
+  .triangle-transition::before {
+    transform: translateY(-48px);
+    bottom: 100%;
+    border-width: 0 40vw 80px 80vw;
+    @apply border-t-transparent border-r-transparent border-b-white border-l-transparent dark:border-t-transparent dark:border-r-transparent dark:border-l-transparent dark:border-trueGray-900;
+  }
+
+}
+
