@@ -15,7 +15,10 @@ const config: Config = {
     extend: {
       colors: {
         trueGray: colors.neutral,
-        custom1: "#FF513F", 
+        custom1: "#FF513F",
+        artfood: "#C6735A",
+        artfoodDark: "#B05D45",
+        artfoodLight: "#FFF2EE",
       },
     },
     fontFamily: {

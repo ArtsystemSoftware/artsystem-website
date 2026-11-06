@@ -23,6 +23,74 @@
   animation: fadeOut 1s ease-in-out;
 }
 
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes floatCardSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(198, 115, 90, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(198, 115, 90, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(198, 115, 90, 0);
+  }
+}
+
+.animate-float-card {
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+.animate-float-card-slow {
+  animation: floatCardSlow 7s ease-in-out infinite;
+}
+
+.animate-rise-in {
+  animation: riseIn 0.55s ease-out both;
+}
+
+.animate-pulse-ring {
+  animation: pulseRing 2.2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-card,
+  .animate-float-card-slow,
+  .animate-rise-in,
+  .animate-pulse-ring {
+    animation: none !important;
+  }
+}
+
 @layer base {
   html,
   body {

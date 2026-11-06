@@ -19,10 +19,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  hideNavbarAndPopup = false,
 }: Readonly<{
   children: React.ReactNode;
-  hideNavbarAndPopup?: boolean;
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
@@ -38,10 +36,10 @@ export default function RootLayout({
           <div id="spinner-overlay" className="spinner-overlay">
             <div className="spinner"></div>
           </div>
-          {!hideNavbarAndPopup && <Navbar />}
+          <Navbar />
           <div>{children}</div>
           <Footer />
-          {!hideNavbarAndPopup && <PopupWidget />}
+          <PopupWidget />
         </ThemeProvider>
 
         {/* Script de inicialização do Google Analytics */}

@@ -1,5 +1,6 @@
 'use client';   
 import Image from "next/image";
+import Link from "next/link";
 import imageSolucoes from "@/img/imageSolucoes.webp";
 import imageBeneficio from "@/img/beneficios2.webp";
 import imagePdv1 from "@/img/pdv1.webp";
@@ -7,8 +8,10 @@ import imagePdv2 from "@/img/pdv2.webp";
 import imagePdv3 from "@/img/pdv3.webp";
 import imageErp from "@/img/erp.webp";
 import { SectionTitle } from "@/components/SectionTitle";
+import { BreadMark } from "@/components/artfood/ArtFoodLogo";
 import { useState, useEffect } from "react";
 import { ManualGear, CircularConnection } from '@icon-park/react';
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
@@ -130,6 +133,69 @@ export default function Solucoes() {
                     <p className="text-center lg:text-start text-gray-500 dark:text-gray-300 mt-6 lg:pr-40">
                         Quem disse que é preciso ser complicado para ser completo? Com o <strong>ArtSystem-ERP</strong> os usuários têm acesso a uma experiência de uso inédita em programas para a mesma finalidade. Através de uma interface gráfica intuitiva, este software eleva a produtividade dos usuários.
                     </p>
+                </div>
+            </div>
+
+            <div className="w-[600px] md:w-[700px] lg:w-[1000px] xl:w-[1559px] bg-white dark:bg-[#171717] shadow-md rounded-[20px] mt-20 overflow-hidden">
+                <div className="grid lg:grid-cols-2 items-center">
+                    <div className="mx-10 my-14 lg:mx-20">
+                        <div className="flex items-center gap-3">
+                            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-artfoodLight dark:bg-artfood/10">
+                                <BreadMark className="h-8 w-8" />
+                            </div>
+                            <div>
+                                <p className="text-xs font-bold uppercase tracking-wider text-artfood">Food Service</p>
+                                <h2 className="text-3xl font-bold">Art Food</h2>
+                            </div>
+                        </div>
+                        <p className="mt-6 text-gray-500 dark:text-gray-300">
+                            O <strong>Art Food</strong> é a solução de atendimento para restaurantes, padarias, lanchonetes e cafeterias. Cardápio digital, comandas, painel do garçom, balança e faturamento em uma interface simples e integrada ao ecossistema ArtSystem.
+                        </p>
+                        <ul className="mt-5 space-y-2 text-sm text-gray-500 dark:text-gray-300">
+                            <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-artfood" /> Atendimento de mesa e comandas em tempo real</li>
+                            <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-artfood" /> Cardápio digital com departamentos e opções</li>
+                            <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-artfood" /> Integração com balança, PDV e ERP</li>
+                        </ul>
+                        <Link
+                            href="/artfood"
+                            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#FF513F] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#e04736]"
+                        >
+                            Conhecer o Art Food
+                            <ArrowRightIcon className="h-4 w-4" />
+                        </Link>
+                    </div>
+
+                    <div className="flex justify-center p-6 lg:p-10">
+                        <div className="w-full max-w-sm rounded-2xl border border-zinc-800 bg-zinc-950 p-2 shadow-xl">
+                            <div className="rounded-xl bg-slate-50 p-3.5">
+                                <div className="flex items-center justify-between border-b border-zinc-100 pb-2">
+                                    <div className="flex items-center gap-1.5">
+                                        <BreadMark className="h-5 w-5" />
+                                        <span className="text-xs font-extrabold text-zinc-900">Art <span className="text-artfood">Food</span></span>
+                                    </div>
+                                    <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-[9px] font-bold text-zinc-500">Mesa 07</span>
+                                </div>
+                                <div className="mt-2 grid grid-cols-2 gap-2">
+                                    {[
+                                        { emoji: "🧀", name: "Pão de Queijo", price: "R$ 8,50" },
+                                        { emoji: "☕", name: "Cappuccino", price: "R$ 9,90" },
+                                        { emoji: "🍰", name: "Bolo de Cenoura", price: "R$ 11,50" },
+                                        { emoji: "🥐", name: "Croissant", price: "R$ 12,90" },
+                                    ].map((item) => (
+                                        <div key={item.name} className="rounded-lg border border-zinc-100 bg-white p-2">
+                                            <span className="text-lg">{item.emoji}</span>
+                                            <p className="mt-0.5 text-[10px] font-bold leading-tight text-zinc-800">{item.name}</p>
+                                            <p className="text-[9px] font-bold text-artfood">{item.price}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="mt-2 flex items-center justify-between rounded-lg bg-zinc-900 px-3 py-2 text-white">
+                                    <span className="text-[10px] font-semibold text-zinc-400">Comanda 042</span>
+                                    <strong className="text-xs">R$ 86,40</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

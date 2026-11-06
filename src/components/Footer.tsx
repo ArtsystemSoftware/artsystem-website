@@ -10,6 +10,7 @@ export function Footer() {
     { name: "Inicio", href: "/" },
     { name: "Sobre Nós", href: "/sobre" },
     { name: "Soluções", href: "/solucoes" },
+    { name: "Art Food", href: "/artfood" },
     { name: "Contato", href: "/contato" },
   ];
 
@@ -62,7 +63,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div>j
+          <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
                 <Link
