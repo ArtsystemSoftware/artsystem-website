@@ -4,7 +4,6 @@ import {
   ArrowPathIcon,
   ArrowRightIcon,
   BanknotesIcon,
-  ChartBarIcon,
   CheckCircleIcon,
   ClipboardDocumentListIcon,
   ClockIcon,
@@ -23,6 +22,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Cta } from "@/components/Cta";
 import { BreadMark } from "@/components/artfood/ArtFoodLogo";
 import { ArtFoodDemo } from "@/components/artfood/ArtFoodDemo";
+import { ArtFoodRequirements } from "@/components/artfood/ArtFoodRequirements";
 
 export const metadata: Metadata = {
   title: "Art Food | ArtSystem",
@@ -140,7 +140,7 @@ const FAQS = [
   {
     question: "O Art Food tem controle de acesso por perfil?",
     answer:
-      "Sim. Cada colaborador acessa apenas os módulos liberados para o seu perfil — garçom, caixa, gerente ou administrador —, reduzindo riscos operacionais.",
+      "Sim. Cada colaborador acessa apenas os módulos liberados para o seu perfil — garçom, mesa ou administrador — reduzindo riscos operacionais.",
   },
 ];
 
@@ -525,7 +525,7 @@ export default function ArtFoodPage() {
               Art Food na ponta, ArtSystem no controle.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 lg:text-lg">
-              O Art Food pode operar de forma independente ou integrado ao
+              O Art Food opera integrado ao
               ArtSystem-PDV. A comanda nasce no salão e
               percorre o caminho até o caixa sem digitação duplicada.
             </p>
@@ -587,12 +587,6 @@ export default function ArtFoodPage() {
                 Icon={ReceiptPercentIcon}
                 title="ArtSystem-PDV"
                 subtitle="Caixa, pagamento e fiscal"
-              />
-              <FlowConnector label="Vendas consolidadas" />
-              <FlowNode
-                Icon={ChartBarIcon}
-                title="ArtSystem-ERP"
-                subtitle="Estoque, financeiro e gestão"
               />
             </div>
 
@@ -681,6 +675,8 @@ export default function ArtFoodPage() {
           </div>
         </Container>
       </div>
+
+      <ArtFoodRequirements />
 
       <div
         id="faq"
