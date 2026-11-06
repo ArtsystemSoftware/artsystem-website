@@ -3,12 +3,16 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Logo from "@/img/logo2.svg";
+import { BreadMark } from "@/components/artfood/ArtFoodLogo";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
+  const productsRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +31,30 @@ export const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (!productsOpen) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!productsRef.current?.contains(event.target as Node)) {
+        setProductsOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setProductsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [productsOpen]);
 
   const handleThemeChange = () => {
     setIsLoading(true);
@@ -96,7 +124,28 @@ export const Navbar = () => {
 
               <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                 <>
-                  {navigation.map((item, index) => (
+                  {navigation.slice(0, 3).map((item, index) => (
+                    <Link key={index} href={item.href} className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-custom1 focus:text-custom1 focus:bg-red-100 dark:focus:bg-red-100 focus:outline-none">
+                      {item.name}
+                    </Link>
+                  ))}
+                  <Disclosure as="div" className="w-full">
+                    {({ open: productsOpen }) => (
+                      <>
+                        <Disclosure.Button className="flex w-full items-center justify-between px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-custom1 focus:text-custom1 focus:bg-red-100 dark:focus:bg-red-100 focus:outline-none">
+                          Produtos
+                          <ChevronDownIcon className={`h-4 w-4 transition-transform ${productsOpen ? "rotate-180" : ""}`} />
+                        </Disclosure.Button>
+                        <Disclosure.Panel className="pl-4">
+                          <Link href="/artfood" className="flex w-full items-center gap-2 px-4 py-2 -ml-4 text-sm text-gray-500 rounded-md dark:text-gray-300 hover:text-custom1 focus:text-custom1 focus:bg-red-100 dark:focus:bg-red-100 focus:outline-none">
+                            <BreadMark className="h-4 w-4" />
+                            Art Food
+                          </Link>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                  {navigation.slice(3).map((item, index) => (
                     <Link key={index} href={item.href} className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-custom1 focus:text-custom1 focus:bg-red-100 dark:focus:bg-red-100 focus:outline-none">
                       {item.name}
                     </Link>
@@ -113,9 +162,65 @@ export const Navbar = () => {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
-                <Link href={menu.href} className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-custom1 focus:text-custom1 focus:bg-red-100 focus:outline-none dark:focus:bg-custom1">
+            {navigation.slice(0, 3).map((menu, index) => (
+              <li className="mr-1 nav__item xl:mr-3" key={index}>
+                <Link href={menu.href} className="inline-block px-3 py-2 text-base font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-custom1 focus:text-custom1 focus:bg-red-100 focus:outline-none dark:focus:bg-custom1 xl:px-4 xl:text-lg">
+                  {menu.name}
+                </Link>
+              </li>
+            ))}
+
+            <li
+              ref={productsRef}
+              className="relative nav__item mr-1 xl:mr-3"
+              onMouseEnter={() => setProductsOpen(true)}
+              onMouseLeave={() => setProductsOpen(false)}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                  setProductsOpen(false);
+                }
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => setProductsOpen(true)}
+                aria-expanded={productsOpen}
+                aria-controls="products-dropdown"
+                className="inline-flex items-center gap-1 px-3 py-2 text-base font-normal text-gray-800 no-underline bg-transparent rounded-md dark:text-gray-200 hover:text-custom1 focus:text-custom1 focus:bg-red-100 focus:outline-none dark:focus:bg-custom1 xl:px-4 xl:text-lg"
+              >
+                Produtos
+                <ChevronDownIcon className={`h-4 w-4 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              <div
+                id="products-dropdown"
+                className={`absolute left-0 top-full z-30 w-72 pt-3 transition duration-200 ${productsOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0"}`}
+              >
+                <div className="p-2 bg-white border shadow-2xl rounded-2xl border-zinc-100 dark:border-zinc-700 dark:bg-[#171717]">
+                  <Link
+                    href="/artfood"
+                    onClick={() => setProductsOpen(false)}
+                    className="flex items-start gap-3 p-3 text-left transition rounded-xl hover:bg-artfoodLight focus:bg-artfoodLight focus:outline-none dark:hover:bg-artfood/10 dark:focus:bg-artfood/10"
+                  >
+                    <span className="flex items-center justify-center w-10 h-10 border rounded-xl shrink-0 border-artfood/20 bg-artfoodLight dark:bg-artfood/10">
+                      <BreadMark className="w-6 h-6" />
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block text-sm font-extrabold text-gray-900 dark:text-white">
+                        Art Food
+                      </span>
+                      <span className="block mt-0.5 text-[11px] font-medium leading-relaxed text-gray-500 dark:text-gray-400">
+                        Cardápio digital, comandas e gestão para food service
+                      </span>
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </li>
+
+            {navigation.slice(3).map((menu, index) => (
+              <li className="mr-1 nav__item xl:mr-3" key={index}>
+                <Link href={menu.href} className="inline-block px-3 py-2 text-base font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-custom1 focus:text-custom1 focus:bg-red-100 focus:outline-none dark:focus:bg-custom1 xl:px-4 xl:text-lg">
                   {menu.name}
                 </Link>
               </li>
