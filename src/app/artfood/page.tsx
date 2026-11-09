@@ -549,10 +549,10 @@ export default function ArtFoodPage() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/solucoes"
+                href="/pdv"
                 className="inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-gray-200"
               >
-                Conhecer as soluções ArtSystem
+                Conhecer o ArtSystem-PDV
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
               <Link

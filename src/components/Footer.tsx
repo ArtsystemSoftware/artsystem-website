@@ -9,7 +9,8 @@ export function Footer() {
   const navigation = [
     { name: "Inicio", href: "/" },
     { name: "Sobre Nós", href: "/sobre" },
-    { name: "Soluções", href: "/solucoes" },
+    { name: "ArtSystem-ERP", href: "/erp" },
+    { name: "ArtSystem-PDV", href: "/pdv" },
     { name: "Art Food", href: "/artfood" },
     { name: "Contato", href: "/contato" },
   ];
