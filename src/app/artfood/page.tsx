@@ -9,6 +9,7 @@ import {
   ClockIcon,
   CpuChipIcon,
   DeviceTabletIcon,
+  LockOpenIcon,
   ReceiptPercentIcon,
   ScaleIcon,
   ShieldCheckIcon,
@@ -587,6 +588,12 @@ export default function ArtFoodPage() {
                 Icon={ReceiptPercentIcon}
                 title="ArtSystem-PDV"
                 subtitle="Caixa, pagamento e fiscal"
+              />
+              <FlowConnector label="Integração com catraca" />
+              <FlowNode
+                Icon={LockOpenIcon}
+                title="Catraca"
+                subtitle="Liberação de comanda"
               />
             </div>
 
