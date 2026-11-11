@@ -74,14 +74,14 @@ export const Navbar = () => {
 
   const products = [
     {
-      name: "ArtSystem-ERP",
+      name: "Art ERP",
       href: "/erp",
       desc: "Gestão integrada para varejos e atacados",
       icon: <CircularConnection style={{ fontSize: "24px" }} className="text-custom1" />,
       iconBg: "border-custom1/20 bg-custom1/10",
     },
     {
-      name: "ArtSystem-PDV",
+      name: "Art PDV",
       href: "/pdv",
       desc: "Automação de pontos de venda e frente de caixa",
       icon: <ManualGear style={{ fontSize: "24px" }} className="text-custom1" />,

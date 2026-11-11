@@ -22,9 +22,9 @@ import imagePdv2 from "@/img/pdv2.webp";
 import imagePdv3 from "@/img/pdv3.webp";
 
 export const metadata: Metadata = {
-  title: "ArtSystem-PDV | ArtSystem",
+  title: "Art PDV | ArtSystem",
   description:
-    "Conheça o ArtSystem-PDV: automação de pontos de venda integrada a balanças, impressoras fiscais, SAT, NFC-e, TEF e impressoras de cheques.",
+    "Conheça o Art PDV: automação de pontos de venda integrada a balanças, impressoras fiscais, NFC-e, TEF e impressoras de cheques.",
 };
 
 const SEGMENTS = [
@@ -53,7 +53,7 @@ const FEATURES = [
   {
     Icon: CpuChipIcon,
     title: "Dispositivos integrados",
-    desc: "Balanças, impressoras fiscais, SAT, NFC-e, TEF e impressoras de cheques conectados ao caixa.",
+    desc: "Balanças, impressoras fiscais, NFC-e, TEF e impressoras de cheques conectados ao caixa.",
     accent: "bg-sky-50 text-sky-700 dark:bg-sky-500/10 dark:text-sky-300",
   },
   {
@@ -79,7 +79,7 @@ const FEATURES = [
   {
     Icon: ArrowsRightLeftIcon,
     title: "Integração com o ERP",
-    desc: "Sincronização automática com o ArtSystem-ERP, sem importação ou exportação manual de dados.",
+    desc: "Sincronização automática com o Art ERP, sem importação ou exportação manual de dados.",
     accent: "bg-custom1/10 text-custom1 dark:bg-custom1/10 dark:text-custom1",
   },
 ];
@@ -94,15 +94,15 @@ const ERP_BENEFITS = [
 const CUSTOM_SCREENS = [
   {
     image: imagePdv1,
-    alt: "Tela do ArtSystem-PDV personalizada para um cliente",
+    alt: "Tela do Art PDV personalizada para um cliente",
   },
   {
     image: imagePdv2,
-    alt: "Tela do ArtSystem-PDV personalizada para um supermercado",
+    alt: "Tela do Art PDV personalizada para um supermercado",
   },
   {
     image: imagePdv3,
-    alt: "Tela do ArtSystem-PDV personalizada para um estabelecimento",
+    alt: "Tela do Art PDV personalizada para um estabelecimento",
   },
 ];
 
@@ -127,19 +127,19 @@ export default function PdvPage() {
             </span>
 
             <h1 className="mt-6 max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-tight text-gray-900 dark:text-white sm:text-5xl xl:text-6xl">
-              ArtSystem-PDV: mais agilidade no caixa,{" "}
+              Art PDV: mais agilidade no caixa,{" "}
               <span className="text-custom1">menos filas.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 sm:text-lg">
               Automação de pontos de venda integrada a balanças, impressoras
-              fiscais, SAT, NFC-e, TEF e impressoras de cheques. Um meio rápido,
+              fiscais, NFC-e, TEF e impressoras de cheques. Um meio rápido,
               confiável e eficiente de eliminar filas no seu ponto de venda.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
-                href="https://wa.me/5511917401730?text=Gostaria%20de%20conhecer%20o%20ArtSystem-PDV."
+                href="https://wa.me/5511917401730?text=Gostaria%20de%20conhecer%20o%20Art%20PDV."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-custom1 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-custom1/20 transition hover:-translate-y-0.5 hover:bg-custom1/90"
@@ -151,7 +151,7 @@ export default function PdvPage() {
                 href="/erp"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white/80 px-6 py-3.5 text-sm font-bold text-gray-800 transition hover:border-custom1 hover:text-custom1 dark:border-zinc-700 dark:bg-[#171717]/80 dark:text-gray-200 dark:hover:border-custom1 dark:hover:text-custom1"
               >
-                Conhecer o ArtSystem-ERP
+                Conhecer o Art ERP
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </div>
@@ -166,7 +166,7 @@ export default function PdvPage() {
                 {
                   Icon: ReceiptPercentIcon,
                   title: "Fiscal",
-                  desc: "SAT, NFC-e e homologações",
+                  desc: "NFC-e e homologações",
                 },
                 {
                   Icon: ArrowsRightLeftIcon,
@@ -195,7 +195,7 @@ export default function PdvPage() {
             <div className="relative overflow-hidden rounded-[32px] border border-zinc-200/80 bg-white p-2.5 shadow-2xl dark:border-zinc-700 dark:bg-[#171717] sm:p-3">
               <Image
                 src={imagePdv}
-                alt="ArtSystem-PDV integrado a balança, impressora fiscal e terminal de pagamento"
+                alt="Art PDV integrado a balança, impressora fiscal e terminal de pagamento"
                 className="h-auto w-full rounded-[24px] object-cover"
                 priority
               />
@@ -230,7 +230,7 @@ export default function PdvPage() {
             preTitle="Recursos"
             title="Um caixa preparado para o seu dia a dia"
           >
-            Do primeiro item ao fechamento fiscal, o ArtSystem-PDV conecta
+            Do primeiro item ao fechamento fiscal, o Art PDV conecta
             periféricos, pagamentos e gestão em uma operação simples para o
             operador e segura para o negócio.
           </SectionTitle>
@@ -269,14 +269,14 @@ export default function PdvPage() {
                 Legislação fiscal
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-gray-500 dark:text-gray-300 sm:text-base">
-                O <strong>ArtSystem-PDV</strong> está em constante atualização
+                O <strong>Art PDV</strong> está em constante atualização
                 para adequação à legislação fiscal. Passando com sucesso por
                 diversos processos de homologação, é um software maduro, que
                 atende clientes em todo o Brasil.
               </p>
               <ul className="mt-5 space-y-2.5">
                 {[
-                  "Emissão de SAT e NFC-e.",
+                  "Emissão de NFC-e.",
                   "Integração com impressoras fiscais.",
                   "Atualizações acompanhando as obrigações do estado.",
                 ].map((item) => (
@@ -295,11 +295,11 @@ export default function PdvPage() {
                 <ArrowsRightLeftIcon className="h-6 w-6" />
               </div>
               <h2 className="mt-5 text-2xl font-extrabold text-gray-900 dark:text-white">
-                Totalmente integrado ao ArtSystem-ERP
+                Totalmente integrado ao Art ERP
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-gray-500 dark:text-gray-300 sm:text-base">
-                O maior diferencial do <strong>ArtSystem-PDV</strong> é a
-                integração com o <strong>ArtSystem-ERP</strong>. Operadores de
+                O maior diferencial do <strong>Art PDV</strong> é a
+                integração com o <strong>Art ERP</strong>. Operadores de
                 caixa ganham recursos que vão muito além da venda.
               </p>
               <ul className="mt-5 space-y-2.5">
@@ -316,7 +316,7 @@ export default function PdvPage() {
                 href="/erp"
                 className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-custom1 transition hover:text-custom1/80"
               >
-                Conhecer o ArtSystem-ERP
+                Conhecer o Art ERP
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </div>
@@ -361,8 +361,8 @@ export default function PdvPage() {
               O caixa conectado à gestão.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 lg:text-lg">
-              Quando integrado ao <strong>ArtSystem-ERP</strong>, o{" "}
-              <strong>ArtSystem-PDV</strong> se beneficia 100% dos serviços de
+              Quando integrado ao <strong>Art ERP</strong>, o{" "}
+              <strong>Art PDV</strong> se beneficia 100% dos serviços de
               sincronização, eliminando qualquer tipo de processo manual de
               importação e exportação de dados.
             </p>
@@ -372,7 +372,7 @@ export default function PdvPage() {
                 href="/erp"
                 className="inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-gray-200"
               >
-                Conhecer o ArtSystem-ERP
+                Conhecer o Art ERP
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
               <Link
@@ -402,7 +402,7 @@ export default function PdvPage() {
                 </div>
                 <div>
                   <p className="text-sm font-extrabold text-zinc-900 dark:text-white">
-                    ArtSystem-PDV
+                    Art PDV
                   </p>
                   <p className="text-[11px] font-semibold text-zinc-400">
                     Caixa, pagamento e fiscal
@@ -428,7 +428,7 @@ export default function PdvPage() {
                 </div>
                 <div>
                   <p className="text-sm font-extrabold text-zinc-900 dark:text-white">
-                    ArtSystem-ERP
+                    Art ERP
                   </p>
                   <p className="text-[11px] font-semibold text-zinc-400">
                     Estoque, financeiro e gestão

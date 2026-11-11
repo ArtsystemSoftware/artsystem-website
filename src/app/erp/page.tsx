@@ -22,9 +22,9 @@ import imageErp from "@/img/erp.webp";
 import imageErpHero from "@/img/imageSolucoes.webp";
 
 export const metadata: Metadata = {
-  title: "ArtSystem-ERP | ArtSystem",
+  title: "Art ERP | ArtSystem",
   description:
-    "Conheça o ArtSystem-ERP: gestão integrada para varejos e atacados, com controle de estoque, compras, financeiro, fiscal e carteira de clientes.",
+    "Conheça o Art ERP: gestão integrada para varejos e atacados, com controle de estoque, compras, financeiro, fiscal e carteira de clientes.",
 };
 
 const SEGMENTS = [
@@ -113,12 +113,12 @@ export default function ErpPage() {
             </span>
 
             <h1 className="mt-6 max-w-2xl text-4xl font-extrabold leading-[1.08] tracking-tight text-gray-900 dark:text-white sm:text-5xl xl:text-6xl">
-              ArtSystem-ERP: o controle completo do{" "}
+              Art ERP: o controle completo do{" "}
               <span className="text-custom1">seu negócio.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 sm:text-lg">
-              Mais que um programa de gestão, o ArtSystem-ERP ajuda a criar uma
+              Mais que um programa de gestão, o Art ERP ajuda a criar uma
               cultura de resultados. Estoque, compras, financeiro, fiscal e
               clientes integrados em uma única plataforma para varejos e
               atacados de todos os tamanhos.
@@ -126,7 +126,7 @@ export default function ErpPage() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
-                href="https://wa.me/5511917401730?text=Gostaria%20de%20conhecer%20o%20ArtSystem-ERP."
+                href="https://wa.me/5511917401730?text=Gostaria%20de%20conhecer%20o%20Art%20ERP."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-custom1 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-custom1/20 transition hover:-translate-y-0.5 hover:bg-custom1/90"
@@ -138,7 +138,7 @@ export default function ErpPage() {
                 href="/pdv"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white/80 px-6 py-3.5 text-sm font-bold text-gray-800 transition hover:border-custom1 hover:text-custom1 dark:border-zinc-700 dark:bg-[#171717]/80 dark:text-gray-200 dark:hover:border-custom1 dark:hover:text-custom1"
               >
-                Conhecer o ArtSystem-PDV
+                Conhecer o Art PDV
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
             </div>
@@ -182,7 +182,7 @@ export default function ErpPage() {
             <div className="relative overflow-hidden rounded-[32px] border border-zinc-200/80 bg-white p-2.5 shadow-2xl dark:border-zinc-700 dark:bg-[#171717] sm:p-3">
               <Image
                 src={imageErpHero}
-                alt="ArtSystem-ERP em diferentes dispositivos"
+                alt="Art ERP em diferentes dispositivos"
                 className="h-auto w-full rounded-[24px] object-cover"
                 priority
               />
@@ -217,7 +217,7 @@ export default function ErpPage() {
             preTitle="Recursos"
             title="Tudo o que a sua gestão precisa"
           >
-            Do cadastro do produto à tomada de decisão, o ArtSystem-ERP conecta
+            Do cadastro do produto à tomada de decisão, o Art ERP conecta
             as áreas da empresa em uma única base de informações.
           </SectionTitle>
 
@@ -257,12 +257,12 @@ export default function ErpPage() {
                 <span className="h-2 w-2 rounded-full bg-amber-400" />
                 <span className="h-2 w-2 rounded-full bg-emerald-500" />
                 <span className="ml-3 text-[10px] font-semibold text-zinc-400">
-                  ArtSystem-ERP · Consulta geral
+                  Art ERP · Consulta geral
                 </span>
               </div>
               <Image
                 src={imageErp}
-                alt="Tela do ArtSystem-ERP com consulta de produto, vendas e estoque"
+                alt="Tela do Art ERP com consulta de produto, vendas e estoque"
                 className="h-auto w-full"
               />
             </div>
@@ -276,7 +276,7 @@ export default function ErpPage() {
               Quem disse que é preciso ser complicado para ser completo?
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 lg:text-lg">
-              Com o ArtSystem-ERP os usuários têm acesso a uma experiência de
+              Com o Art ERP os usuários têm acesso a uma experiência de
               uso inédita em programas para a mesma finalidade. Através de uma
               interface gráfica intuitiva, o software eleva a produtividade da
               equipe e deixa mais tempo para o que importa: o negócio.
@@ -308,7 +308,7 @@ export default function ErpPage() {
               ERP e PDV trabalhando juntos.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 lg:text-lg">
-              O ArtSystem-ERP é o cérebro da operação; o ArtSystem-PDV é a ponta
+              O Art ERP é o cérebro da operação; o Art PDV é a ponta
               do atendimento. Juntos, eliminam retrabalho e mantêm estoque,
               caixa e fiscal sincronizados em tempo real.
             </p>
@@ -318,7 +318,7 @@ export default function ErpPage() {
                 href="/pdv"
                 className="inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-gray-200"
               >
-                Conhecer o ArtSystem-PDV
+                Conhecer o Art PDV
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
               <Link
@@ -348,7 +348,7 @@ export default function ErpPage() {
                 </div>
                 <div>
                   <p className="text-sm font-extrabold text-zinc-900 dark:text-white">
-                    ArtSystem-ERP
+                    Art ERP
                   </p>
                   <p className="text-[11px] font-semibold text-zinc-400">
                     Retaguarda, estoque e gestão
@@ -374,7 +374,7 @@ export default function ErpPage() {
                 </div>
                 <div>
                   <p className="text-sm font-extrabold text-zinc-900 dark:text-white">
-                    ArtSystem-PDV
+                    Art PDV
                   </p>
                   <p className="text-[11px] font-semibold text-zinc-400">
                     Caixa, pagamento e fiscal
