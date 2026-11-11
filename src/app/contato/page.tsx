@@ -70,19 +70,19 @@ export default function Contato() {
                     <ul className="px-12 lg:px-10 xl:px-0">
                         <li className="flex mb-4">
                             <FaPhone className="text-2xl text-custom1" />
-                            <p className="ml-3 text-xl"><strong>Tel. Atendimento:</strong> (11) 3536-9042</p>
+                            <p className="ml-3 text-xl"><strong>Tel. Atendimento:</strong> +55 (11) 91740-1730</p>
                         </li>
                         <li className="flex mb-4">
                             <FaPhone className="text-2xl text-custom1" />
-                            <p className="ml-3 text-xl"><strong>Tel. Suporte:</strong> (11) 3536-9042</p>
+                            <p className="ml-3 text-xl"><strong>Tel. Suporte:</strong> +55 (11) 91740-1730</p>
                         </li>
                         <li className="flex mb-4">
                             <FaEnvelope className="text-2xl text-custom1" />
-                            <p className="ml-3 text-xl"><strong>E-mail:</strong> suporte@assoftware.com.br</p>
+                            <p className="ml-3 text-xl"><strong>E-mail:</strong> comercial@assoftware.com.br</p>
                         </li>
                         <li className="flex mb-4">
                             <FaMap className="text-2xl text-custom1" />
-                            <p className="ml-3 text-xl">Av. Dr. Getúlio Vargas, 582 – Sala 11 – Vila Guaraní – Mauá – SP</p>
+                            <p className="ml-3 text-xl">Av. Dr. Getúlio Vargas, 582 – Sala 31 – Vila Guaraní – Mauá – SP</p>
                         </li>
                     </ul>
                     <form className="mt-8 space-y-6 px-12 lg:px-10 xl:px-0" onSubmit={handleSubmit}>
@@ -143,7 +143,7 @@ export default function Contato() {
                 </div>
                 <div className="flex justify-center w-[70%] md:w-[50%] lg:w-[70%] xl:w-[65%] bg-custom1 rounded-3xl mx-24 mb-12 mt-32 lg:mt-0">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2672851499933!2d-46.45252882385071!3d-23.666397665461076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce695a947ea7bb%3A0x99813c7db90fd720!2sAv.%20Dr.%20Getúlio%20Vargas%2C%20582%20-%20sala%2011%20-%20Vila%20Guarani%2C%20Mau%C3%A1%20-%20SP%2C%2009310-180!5e0!3m2!1spt-BR!2sbr!4v1733456942184!5m2!1spt-BR!2sbr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2672851499933!2d-46.45252882385071!3d-23.666397665461076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce695a947ea7bb%3A0x99813c7db90fd720!2sAv.%20Dr.%20Getúlio%20Vargas%2C%20582%20-%20sala%2031%20-%20Vila%20Guarani%2C%20Mau%C3%A1%20-%20SP%2C%2009310-180!5e0!3m2!1spt-BR!2sbr!4v1733456942184!5m2!1spt-BR!2sbr"
                         width="538"
                         height="776"
                         allowFullScreen

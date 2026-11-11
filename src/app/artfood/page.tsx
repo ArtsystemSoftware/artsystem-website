@@ -23,7 +23,6 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Cta } from "@/components/Cta";
 import { BreadMark } from "@/components/artfood/ArtFoodLogo";
 import { ArtFoodDemo } from "@/components/artfood/ArtFoodDemo";
-import { ArtFoodRequirements } from "@/components/artfood/ArtFoodRequirements";
 
 export const metadata: Metadata = {
   title: "Art Food | ArtSystem",
@@ -108,13 +107,13 @@ const STEPS = [
   {
     number: "04",
     title: "Feche no caixa",
-    desc: "A comanda chega ao ArtSystem-PDV para pagamento, emissão fiscal e atualização do estoque.",
+    desc: "A comanda chega ao Art PDV para pagamento, emissão fiscal e atualização do estoque.",
   },
 ];
 
 const FAQS = [
   {
-    question: "O Art Food substitui o ArtSystem-PDV?",
+    question: "O Art Food substitui o Art PDV?",
     answer:
       "Não. Ele complementa o ecossistema: o Art Food cuida do atendimento no salão e envia as comandas para o PDV, que realiza o fechamento, o pagamento e a emissão fiscal.",
   },
@@ -527,14 +526,14 @@ export default function ArtFoodPage() {
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-500 dark:text-gray-300 lg:text-lg">
               O Art Food opera integrado ao
-              ArtSystem-PDV. A comanda nasce no salão e
+              Art PDV. A comanda nasce no salão e
               percorre o caminho até o caixa sem digitação duplicada.
             </p>
 
             <ul className="mt-7 space-y-3">
               {[
                 "Vendas refletidas no estoque, no financeiro e nos relatórios.",
-                "Rotinas fiscais e de pagamento continuam no ArtSystem-PDV.",
+                "Rotinas fiscais e de pagamento continuam no Art PDV.",
                 "Cadastros e permissões centralizados na retaguarda.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -553,7 +552,7 @@ export default function ArtFoodPage() {
                 href="/pdv"
                 className="inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-gray-200"
               >
-                Conhecer o ArtSystem-PDV
+                Conhecer o Art PDV
                 <ArrowRightIcon className="h-4 w-4" />
               </Link>
               <Link
@@ -586,7 +585,7 @@ export default function ArtFoodPage() {
               <FlowConnector label="Pedidos em tempo real" />
               <FlowNode
                 Icon={ReceiptPercentIcon}
-                title="ArtSystem-PDV"
+                title="Art PDV"
                 subtitle="Caixa, pagamento e fiscal"
               />
               <FlowConnector label="Integração com catraca" />
@@ -682,8 +681,6 @@ export default function ArtFoodPage() {
           </div>
         </Container>
       </div>
-
-      <ArtFoodRequirements />
 
       <div
         id="faq"

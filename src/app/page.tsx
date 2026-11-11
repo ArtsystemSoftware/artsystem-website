@@ -66,7 +66,7 @@ export default function Home() {
           preTitle="Sobre Artsystem"
           title="A solução ideal para o seu negócio"
         >
-          Mais que um simples programa de gestão, o ArtSystem-ERP é uma ferramenta que ajuda a criar uma cultura de resultados positivos nas empresas. Completo, o ArtSystem-ERP é o que há de mais moderno em softwares para gestão de varejos e atacados.
+          Mais que um simples programa de gestão, o Art ERP é uma ferramenta que ajuda a criar uma cultura de resultados positivos nas empresas. Completo, o Art ERP é o que há de mais moderno em softwares para gestão de varejos e atacados.
         </SectionTitle>
 
         <Benefits data={benefitOne} />

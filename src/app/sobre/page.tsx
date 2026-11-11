@@ -82,10 +82,10 @@ export default function Sobre() {
                 Diante desta oportunidade de fazer algo diferente do que existia no mercado, surge a ideia de criar um sistema de gestão comercial voltado para a simplicidade na operação, mas com a complexidade e a sofisticação das melhores práticas de mercado.
                 <br/>
                 <br/>
-                Essa visão também foi partilhada pelos clientes ArtSystem-ERP, pois esse software teve sua “gestação” dentro de um ambiente operacional da rede de supermercados Lourencini, o que permitia colocar em pratica as ideias e as tecnologias que estavam sendo desenvolvidas.
+                Essa visão também foi partilhada pelos clientes Art ERP, pois esse software teve sua “gestação” dentro de um ambiente operacional da rede de supermercados Lourencini, o que permitia colocar em pratica as ideias e as tecnologias que estavam sendo desenvolvidas.
                 <br/>
                 <br/>
-                Esse ambiente trouxe ao ArtSystem-ERP algo que não se vê nos softwares disponíveis do mercado, que é a aplicação das regras de negócio na pratica. Dessa forma o ArtSystem-ERP tornou-se um software confiável, robusto e de fácil operação, sem abrir mão das mais modernas práticas de mercado.
+                Esse ambiente trouxe ao Art ERP algo que não se vê nos softwares disponíveis do mercado, que é a aplicação das regras de negócio na pratica. Dessa forma o Art ERP tornou-se um software confiável, robusto e de fácil operação, sem abrir mão das mais modernas práticas de mercado.
                 </p>
             </div>
             <div className="mt-20">

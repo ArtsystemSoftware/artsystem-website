@@ -65,7 +65,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
             ))}
             {data.title === "Diferenciais" && (
               <Link href="/erp" className="inline-flex items-center text-sm md:text-lg font-medium text-[#ffffff] dark:text-[#ffffff] bg-[#FF513F] p-3 rounded-lg hover:bg-[#FF513F]/60 transition-colors mt-12">
-                Conheça o ArtSystem-ERP ⭢
+                Conheça o Art ERP ⭢
               </Link>
             )}
           </div>

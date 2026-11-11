@@ -3,14 +3,13 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 import Logo from "@/img/logo.svg"
-import Tectree from "@/img/tectree.svg"
 
 export function Footer() {
   const navigation = [
     { name: "Inicio", href: "/" },
     { name: "Sobre Nós", href: "/sobre" },
-    { name: "ArtSystem-ERP", href: "/erp" },
-    { name: "ArtSystem-PDV", href: "/pdv" },
+    { name: "Art ERP", href: "/erp" },
+    { name: "Art PDV", href: "/pdv" },
     { name: "Art Food", href: "/artfood" },
     { name: "Contato", href: "/contato" },
   ];
@@ -43,24 +42,7 @@ export function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-sm text-gray-500 dark:text-gray-400">
-              Mais que um simples programa de gestão, o <strong>ArtSystem-ERP</strong> é uma ferramenta que ajuda a criar uma cultura de resultados positivos nas empresas. Completo, o ArtSystem-ERP é o que há de mais moderno em softwares para gestão de varejos e atacados.
-            </div>
-
-            <div className="mt-5">
-              <a
-                href="https://tectree.com.br/"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44"
-              >
-                <Image
-                  src={Tectree}
-                  alt="Powered by Tectree"
-                  width="212"
-                  height="44"
-                  className="hover:scale-95"
-                />
-              </a>
+              Mais que um simples programa de gestão, o <strong>Art ERP</strong> é uma ferramenta que ajuda a criar uma cultura de resultados positivos nas empresas. Completo, o Art ERP é o que há de mais moderno em softwares para gestão de varejos e atacados.
             </div>
           </div>
 
@@ -103,7 +85,7 @@ export function Footer() {
                 <Facebook />
               </a>
               <a
-                href="https://www.instagram.com/artsystem_software/"
+                href="https://www.instagram.com/artsystem.software/"
                 target="_blank"
                 rel="noopener"
               >
