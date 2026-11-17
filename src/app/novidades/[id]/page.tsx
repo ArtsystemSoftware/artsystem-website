@@ -3,9 +3,23 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faArrowLeft, faArrowRight, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faArrowLeft, faArrowRight, faTimes, faDownload, faEye } from "@fortawesome/free-solid-svg-icons";
 import novidadesData from "../../../../public/data/novidades.json";
 import Image from 'next/image';
+
+type NovidadePost = {
+    id: number;
+    slug: string;
+    thumbnail: string;
+    gallery: string[];
+    title: string;
+    text: string;
+    date: string;
+    sistema: string;
+    pdf?: string;
+};
+
+const posts = novidadesData.posts as NovidadePost[];
 
 export default function NovidadesSlug() {
     const pathname = usePathname();
@@ -20,10 +34,10 @@ export default function NovidadesSlug() {
         setIsMounted(true);
     }, []);
 
-    const post = novidadesData.posts.find((p) => p.slug === slug);
-    const postIndex = novidadesData.posts.findIndex((p) => p.slug === slug);
-    const prevPost = novidadesData.posts[postIndex - 1];
-    const nextPost = novidadesData.posts[postIndex + 1];
+    const post = posts.find((p) => p.slug === slug);
+    const postIndex = posts.findIndex((p) => p.slug === slug);
+    const prevPost = posts[postIndex - 1];
+    const nextPost = posts[postIndex + 1];
 
     if (!post) return <p>Novidade não encontrada</p>;
 
@@ -57,7 +71,7 @@ export default function NovidadesSlug() {
                         <Image
                             src={`/img/novidades/${post.thumbnail}`}
                             alt={post.title}
-                            className="w-full h-auto rounded-lg shadow-lg"
+                            className={`w-full rounded-lg shadow-lg ${post.pdf ? "h-[360px] object-cover object-top" : "h-auto"}`}
                             width={500}
                             height={500}
                             priority
@@ -83,6 +97,51 @@ export default function NovidadesSlug() {
                         </div>
                     ))}
                 </div>
+
+                {post.pdf && (
+                    <div className="mb-8">
+                        <div className="flex flex-col gap-4 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-[#2F2F2F] sm:flex-row sm:items-center sm:justify-between">
+                            <div>
+                                <h2 className="text-2xl font-bold text-[#1f2937] dark:text-white">
+                                    Glossário completo em PDF
+                                </h2>
+                                <p className="mt-1 text-base text-gray-600 dark:text-gray-300">
+                                    Visualize o material na página ou baixe para consultar quando quiser.
+                                </p>
+                            </div>
+                            <div className="flex flex-wrap gap-3">
+                                <a
+                                    href={post.pdf}
+                                    download="Glossario-Visual-da-Reforma-Tributaria.pdf"
+                                    className="inline-flex items-center gap-2 rounded-lg bg-[#FF513F] px-5 py-2.5 font-semibold text-white transition hover:brightness-95"
+                                >
+                                    <FontAwesomeIcon icon={faDownload} className="h-4 w-4" />
+                                    Baixar PDF
+                                </a>
+                                <a
+                                    href={post.pdf}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 rounded-lg bg-zinc-200 px-5 py-2.5 font-semibold text-gray-800 transition hover:bg-zinc-300 dark:bg-zinc-700 dark:text-white dark:hover:bg-zinc-600"
+                                >
+                                    <FontAwesomeIcon icon={faEye} className="h-4 w-4" />
+                                    Abrir em nova aba
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 hidden overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-700 dark:bg-zinc-900 md:block">
+                            <iframe
+                                src={`${post.pdf}#view=FitH`}
+                                title={`PDF: ${post.title}`}
+                                className="h-[75vh] min-h-[520px] w-full"
+                            />
+                        </div>
+                        <p className="mt-3 text-sm text-gray-500 dark:text-gray-400 md:hidden">
+                            A visualização do PDF está disponível em &quot;Abrir em nova aba&quot; ou no download do arquivo.
+                        </p>
+                    </div>
+                )}
 
                 {lightboxOpen && (
                     <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">

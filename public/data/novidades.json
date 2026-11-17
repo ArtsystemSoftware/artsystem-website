@@ -1,6 +1,17 @@
 {
     "posts": [
         {
+            "id": 3,
+            "slug": "glossario-visual-da-reforma-tributaria",
+            "thumbnail": "thumb-p3.webp",
+            "gallery": [],
+            "pdf": "/docs/glossario-visual-da-reforma-tributaria.pdf",
+            "title": "Glossário Visual da Reforma Tributária",
+            "text": "Você já se pegou perdido entre as siglas da Reforma Tributária? Preparamos um Glossário Visual da Reforma Tributária para explicar, de forma simples e ilustrada, os principais termos que estão mudando a rotina fiscal das empresas.\n\nO que você encontra no material:\nIBS, CBS, Imposto Seletivo e as demais siglas explicadas sem complicação.\nA relação entre ICMS, ISS e o novo modelo de tributação.\nO período de transição e o que muda na prática para o seu negócio.\nUm material de consulta rápida para revisar conceitos sempre que precisar.\n\nPor que isso importa para a sua empresa?\nA reforma altera a forma como os tributos são calculados, destacados e recolhidos. Entender os conceitos ajuda a planejar a transição, evitar erros na emissão de documentos fiscais e tomar decisões com mais segurança.\n\nA ArtSystem acompanha essas mudanças e prepara suas soluções para apoiar a sua empresa em cada etapa. Consulte o glossário completo abaixo e, se precisar de ajuda para adequar seus processos, fale com a nossa equipe.",
+            "date": "Novembro 2026",
+            "sistema": "ArtSystem"
+        },
+        {
             "id": 1,
             "slug": "controle-consulta-pdv",
             "thumbnail": "thumb-p1.png",
