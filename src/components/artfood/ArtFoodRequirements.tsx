@@ -128,7 +128,7 @@ export function ArtFoodRequirements() {
             <p className="mt-1 text-xs font-medium leading-relaxed text-gray-500 dark:text-gray-300">
               Sem a balança, o peso pode ser digitado manualmente. Sem a câmera,
               a comanda pode ser identificada pelo código. A impressão fiscal e
-              o pagamento continuam no ArtSystem-PDV.
+              o pagamento continuam no Art PDV.
             </p>
           </div>
         </div>

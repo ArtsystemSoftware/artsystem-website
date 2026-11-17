@@ -103,7 +103,7 @@ export const Hero = () => {
                       <FaWhatsapp className="ml-2" />
                     </a>
                     <a
-                      href="https://www.instagram.com/artsystem_software/"
+                      href="https://www.instagram.com/artsystem.software/"
                       target="_blank"
                       rel="noopener"
                       className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 hover:text-custom1"
@@ -152,7 +152,7 @@ export const Hero = () => {
                       <FaWhatsapp className="ml-2" />
                     </a>
                     <a
-                      href="https://www.instagram.com/artsystem_software/"
+                      href="https://www.instagram.com/artsystem.software/"
                       target="_blank"
                       rel="noopener"
                       className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 dark:hover:text-custom1"
@@ -200,7 +200,7 @@ export const Hero = () => {
                   <FaWhatsapp className="ml-2" />
                 </a>
                 <a
-                  href="https://www.instagram.com/artsystem_software/"
+                  href="https://www.instagram.com/artsystem.software/"
                   target="_blank"
                   rel="noopener"
                   className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 hover:text-custom1"

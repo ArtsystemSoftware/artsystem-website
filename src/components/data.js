@@ -53,14 +53,14 @@ export const benefitTwo = {
   image: benefitTwoImg,
   bullets: [
     {
-      title: "ArtSystem-PDV",
-      desc: "Automação de vendas com ArtSystem-PDV, integrado a sistemas externos.",
+      title: "Art PDV",
+      desc: "Automação de vendas com Art PDV, integrado a sistemas externos.",
       link: "",
       iconArrow: "",
       icon: <ManualGear style={{ fontSize: '28px' }} />,
     },
     {
-      title: "ArtSystem-ERP",
+      title: "Art ERP",
       desc: "Gestão integrada online para empresas de todos os portes.",
       link: "",
       iconArrow: "",
