@@ -1,6 +1,16 @@
 {
     "posts": [
         {
+            "id": 4,
+            "slug": "recebimento-convenio",
+            "thumbnail": "thumb-p4.png",
+            "gallery": [],
+            "title": "Recebimento de Convênio no Caixa",
+            "text": "Neste manual você aprende como liberar a função no AS_ERP.",
+            "date": "Novembro 2026",
+            "sistema": "PDV"
+        },
+        {
             "id": 3,
             "slug": "glossario-visual-da-reforma-tributaria",
             "thumbnail": "thumb-p3.webp",
